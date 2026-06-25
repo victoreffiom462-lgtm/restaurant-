@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #FFDD;
 }
 
 ul li {
@@ -16,24 +16,27 @@ ul li {
 
 ul li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 104px 106px;
   text-decoration: none;
+  font-size:45px;
+  font-family:serif; 
 }
 
 ul li a:hover {
-  background-color: #111111;
+  background-color: #bbbb;
 }
-  ul li a {
-    font-size:100%;
-  }
+  ul li {
+  float: left;
+  border-right: 1px solid #bbbbbb;
+}
   
 h1.myelement{
   color:gold;
   font-family:serif;
   font-size:1000%;
-  text-align:center;
+  text-align:center; 
 }
   h2{
     font-family:times new roman;
@@ -43,57 +46,339 @@ h1.myelement{
   button{
       background-color: #f0d022;
       color:black;
-      padding:10px 20px;
+      padding:40px 60px;
       text-align:center;
+    text-decoration: none; 
       font-family:serif;
+    color:#FFDD;
       font-size:75px;
-      border-radius:20px
-    text-decoration:none;
-    
+      border-radius:30px  
   }
-  button-container {
+  a{
+    text-decoration:none; 
+  }
+  .button-container {
   display: flex;            /* Enables flexbox layout */
   justify-content: center;  /* Centers buttons horizontally */
-  gap: 30px;               /* Adds clean spacing between the buttons */
+  align-items: center; 
+    padding:100px;
+    border-radius:10px;
+    
   }
+  img{
+    width:100%;
+    height:auto; 
+  }
+  p.hat{
+    font-family:san serif; 
+    font-size:500%;
+  }
+   div.hint{
+     background-color:gold;
+     font-size: 500%;
+     font-family:montserrat;
+   }
+    p.float{
+      float:right;
+      color:gold;
+      font-family:serif;
+    }
   
+  p{
+    font-size:500%;
+    font-family:serif;
+  }
+    h1{
+      font-size:200px;
+    } 
+ #div1{
+   border-radius:25px;
+   background-color: gold;
+   padding: 150px;
+   width: 100%;
+   height:auto; 
+   float:left; 
+   font-size:350%;
+   font-family:serif;
+ }
+  .review{
+    margin-bottom:30px;
+  }
+  .review span{
+    display:block;
+    margin-top:10px;
+    color:gold;
+    font-size:80px;
+    font-family:serif;
+    text-align:center; 
+  }
+   .button a{
+      text-decoration: none;
+    }
+  #contact{
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#contact h2{
+    margin-bottom: 30px;
+}
+
+form{
+    max-width: 700px;
+    margin: auto;
+}
+
+input,
+textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+textarea{
+    height: 150px;
+}
+
+form button{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+  .cta{
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta a{
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+}
+  .footer-line{
+    border: none;
+    height: 2px;
+    background: gold;
+    width: 80%;
+    margin: auto;
+  }
+  footer{
+    background-color: #7a0c0c;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer h3{
+    color: gold;
+    margin-bottom: 10px;
+}
+
+footer p{
+    color: white;
+   }
+  footer.p:last-child{
+    margin-top: 25px;
+    font-size:0.9 rem;
+  }
+  .socials a{
+    color: gold;
+    font-size: 2rem;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .socials a:hover{
+    transform: translateY(-5px);
+    color: white;
+  }
+  form{
+    max-width: 900px;
+    margin: auto;
+  }
+  input{
+    height:100px;
+    font-size: 3rem; 
+  }
+   textarea{
+  height:250px;
+     font-size: 3rem; 
+   }
+   form button{
+     padding: 30px 40px;
+     font-size: 5.2rem;
+     border-radius:10px;
+   }
+  .socials i{
+    font-size: 5rem;
+    }
+  .socials a{
+    margin: 0 25px;
+  }
+  .socials a{
+    transition: 0.3s;
+}
+
+.socials a:hover{
+    transform: scale(1.2);
+}
 </style>
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
   <body style="background-color:brown;">
     <header>
       <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="menu.html">Menu</a></li></ul>
+    <li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#menu">Menu</a></li></ul>
 </nav>
     </header>
    <h1 class="myelement">GOLDEN              <sub>CRUNCH</sub></h1>
     
-<img src="chicken image.jpg" > 
+<img src="chicken image2.jpg" width:20px ; height:50px;> 
     
  <h2>Crispy. Fresh. Delivered Fast.</h2>
-<p style="font-size:450%;"><i>Enjoy premium fried chicken and delicious sides delivered straight to your door. </i></p>
+<p style="font-size:450%; text-align:center;"><b style="font-family:times new roman; color:gold;">Enjoy premium fried chicken and delicious sides delivered straight to your door. </b></p>
 <br>
     <div class="button-container">
-    <button><a href="https://wa.me/2349017413213"> Order Now </a></button>
+    <button style="text-decoration:none;"><a href="https://wa.me/2349017413213"> Order Now > </a></button>
   </div>
-    
-  <p style="font-size:1000%">
-    <li> •50,000+ meals served</li>
-    <li> •15+ locations</li>
-    <li> •4.9 Star Rating</li>
-    <li> •10 minutes delivery</li>
-  </p>
+    <br>
+    <br>
+  <div id="div1">
+    <li> 50,000+ meals served</li>
+    <li> 15+ locations</li>
+    <li> 4.9 Star Rating</li>
+    <li> 10 minutes delivery</li>
+  </div>
+    <br>
   <br>
     <br>
-    <h2>Featured Menu</h2>
-<p style="font-size:1000%">Cards:</p> <br>
-<img src="burger.jpg">
-  <h2>Chicken Burger </h2>
+    <h2 id="menu">Featured Menu</h2>
+<p style="font-size:1000%"><b>Cards:</b></p> <br>
+<img src="bucket.jpg">
+  <h2>Crispy Chicken Bucket</h2>
+    <br>
+<br>
+  <img src="burger2.jpg">
+  <h2>Chicken Burger</h2>
+  <br>
+  <br>
+<img src="fries2.jpg">
+  <h2> 🍟 Loaded Fries</h2>
+    <br>
+    <br>
+<img src="fresh drink2.jpg">
+  <h2>Fresh Drinks</h2>
+<br>
+    <br>
+  <br>
+  <br>
+<h1 style="font-size:150px; font-family:serif;">Why Choose Us</h1>
+  <p><b>Three Cards:</b></p>
+ <p>🚚 Fast Delivery</p>
+  <p>🍗 Fresh Ingredients </p>
+  <p>⭐ Top Rated Service</p> 
+    <br>
+    <br>
+  <h1 style="font-size:200px; font-family:serif;" id="about"> About Us</h1>
+<p style="font-family:serif;">Since 2018, Golden crunch has been serving handcrafted fried chicken made from premium ingredients and family recipes. </p>
+<br>
+  <br>
+  <h1 style="font-size:150px; font-family:serif;">Reviews </h1>
+    <div class="review">
+    <p>"Best fried chicken I've had in years"</p>
+    <span>~Sarah Johnson</span>
+</div>
+
+<div class="review">
+    <p>"Fast delivery and amazing flavor"</p>
+    <span>~Michael Johnson</span>
+</div>
+
+<div class="review">
+    <p>"My family's favourite weekend meal"</p>
+    <span>~Emily Carter</span>
+</div>
+
     
+    <br>
     
+    <br>
+    <br>
+    <br>
+    <br> 
+
+    <section id="contact">
+    <h2 id="contact">Contact Us</h2>
+<p>
+We'd love to hear from you. Send us a message and we'll get back to you as <b>soon</b> as possible.
+</p>
+    <form>
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+    </form>
+    </section>
+  </>
+
+    <section class="cta">
+    <h2 style="color:gold;">Ready For Your Next Meal?</h2>
+
+    <p><strong>
+        Freshly prepared meals delivered straight to your doorstep.</strong>
+    </p>
+  <div class="button container">
+ <button> <a href="https://wa.me/2349017413213">
+        Order Now
+    </a> </button>
+    </div>
+    </section>
+    <br>
+    <hr class="footer-line">
+    <footer>
+
+<h3 style="font-size:150px; font-family:serif;">Golden Crunch</h3>
+
+<p>
+Serving happiness one meal at a time.
+</p> <br>
+<p>Follow us for daily specials and exclusive offers! </p>
+
+<div class="socials">
+
+<a href="#">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="#">
+<i class="fa-brands fa-facebook"></i>
+</a>
+
+<a href="#">
+<i class="fa-brands fa-tiktok"></i>
+</a>
+
+</div>
+
+<p>
+© 2026 Golden Crunch. All Rights Reserved.
+</p>
+
+    </footer>
   </body>
 </html>
 
