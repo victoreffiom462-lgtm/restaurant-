@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head> 
-  <meta charset="UTF-8"> 
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Golden Crunch</title>
-<style>
-   *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body{
+    <style> 
+ html, body{
+   max-width:100%; 
     overflow-x:hidden; 
-    page-align:center; 
   }
   .hero{
     display:flex;
@@ -66,18 +62,19 @@ ul li a:hover {
   ul li {
   border-right: 1px solid #bbbbbb;
 }
+  ul li:last-child{
+    border-right:none; 
+  }
   nav{
     width:100%; 
   }
 h1.myelement{
   color:gold;
   font-family:serif;
-    font-size:clamp(3rem,8vw,6rem);
     text-align:center;
   }
   h2{
     font-family:times new roman;
-    font-size:1000%;
     text-align:center; 
   }
   button{
@@ -99,7 +96,8 @@ h1.myelement{
   justify-content: center;  /* Centers buttons horizontally */
   align-items: center; 
     padding:100px;
-    border-radius:10px;
+    border-radius:8px;
+    font-size:2rem; 
     
   }
   img{
@@ -126,18 +124,9 @@ h1.myelement{
     font-family:serif;
   }
     h1{
-      font-size:200px;
-    } 
- #div1{
-   border-radius:25px;
-   background-color: gold;
-   padding: 40px;
-   width: 100%;
-   height:auto; 
-   float:left; 
-   font-size:350%;
-   font-family:serif;
- }
+    font-size: clamp(2.5rem, 8vw, 5rem);
+      }
+    
   .review{
     margin-bottom:30px;
   }
@@ -145,7 +134,7 @@ h1.myelement{
     display:block;
     margin-top:10px;
     color:gold;
-    font-size:45px;
+    font-size:40px;
     font-family:serif;
     text-align:center; 
   }
@@ -162,13 +151,13 @@ h1.myelement{
 }
 
 form{
-    max-width: 700px;
+    max-width: 500px;
     margin: auto;
 }
 
 input,
 textarea{
-    width: 100%;
+    width: 80%;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 8px;
@@ -176,11 +165,11 @@ textarea{
 }
 
 textarea{
-    height: 150px;
+    height: 100px;
 }
 
 form button{
-    padding: 15px 20px;
+    padding: 5px 10px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -206,17 +195,21 @@ form button{
   }
   footer{
     background-color: #7a0c0c;
-    padding: 50px 20px;
-    text-align: center;
+    padding: 80px 4px;
+    text-align:center; 
+    width:100%;  
 }
 
 footer h3{
     color: gold;
     margin-bottom: 10px;
+  font-size:2.5rem; 
+  font-family:serif; 
 }
 
 footer p{
     color: white;
+  font-size:0.9rem;  
    }
   footer.p:last-child{
     margin-top: 25px;
@@ -234,20 +227,20 @@ footer p{
     color: white;
   }
   form{
-    max-width: 900px;
+    max-width: 500px;
     margin: auto;
   }
   input{
     height:100px;
-    font-size: 3rem; 
+    font-size: 2.5rem; 
   }
    textarea{
-  height:250px;
-     font-size: 3rem; 
+  height:100px;
+     font-size: 2.5rem; 
    }
    form button{
-     padding: 30px 40px;
-     font-size: 5.2rem;
+     padding: 20px 30px;
+     font-size: 2.2rem;
      border-radius:10px;
    }
   .socials i{
@@ -266,17 +259,40 @@ footer p{
   @media (max-width:768px){
 
     h1.myelement{
-        font-size:3rem;
+        font-size:2.5rem;
     }
-
+    
+  h1.y26{ 
+      font-family:serif;
+    
+  }
     h2{
-        font-size:2rem;
+        font-size:clamp(2rem;5vw;4rem;) 
+    }
+  h2.kpi{
+    color:gold;
+    font-size:2.5rem; 
+  }
+    h2.myp{
+      font-size:2.5rem; 
     }
 
     p{
         font-size:2rem;
     }
 
+    p.pmi{
+      font-size:1.5rem;
+      color:gold;
+      text-align:center; 
+    }
+    div.kifi{
+      background-color:gold;
+      font-size:1.5rem;  
+      border-radius:5px; 
+      font-family:serif;
+      padding:10px; 
+    }
     button{
         font-size:1rem;
         padding:15px 25px;
@@ -289,7 +305,7 @@ footer p{
 
     textarea{
         font-size:1rem;
-        height:150px;
+        height:80px;
     }
 
     .socials i{
@@ -301,13 +317,12 @@ footer p{
         font-size:1rem;
     }
     .main-container {
-  max-width: 1200px; /* Prevents the site from stretching too wide */
   margin-left: auto; /* Pushes the container from the left */
   margin-right: auto; /* Pushes the container from the right */
   width: 100%; /* Ensures responsiveness on smaller screens */
 }
 
-  
+  } 
 </style>
   
   <link rel="stylesheet"
@@ -326,47 +341,48 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </header>
    <h1 class="myelement">GOLDEN              <sub>CRUNCH</sub></h1>
     
-<img src="chicken image2.jpg" width:20px ; height:50px;> 
+<img src="images/chicken image2.jpg" class="img"> 
     
- <h2 style="font-size:450%">Crispy. Fresh. Delivered Fast.</h2>
-<p style="font-size:250%; text-align:center;"><b style="font-family:times new roman; color:gold;">Enjoy premium fried chicken and delicious sides delivered straight to your door. </b></p>
-<br>
+ <h2 class="myp">Crispy. Fresh. Delivered Fast.</h2>
+<p class="pmi"><b>Enjoy premium fried chicken and delicious sides delivered straight to your door. </b></p>
     <div class="button-container">
-    <button style="text-decoration:none;"><a href="https://wa.me/2349017413213"> Order Now > </a></button>
+    <button style="text-decoration:none;"><a href="https://wa.me/2349017413213">Order Now > </a></button> 
+  </div>
+    <br> 
+  <div class="kifi">
+    <li> • 50,000+ meals served</li>
+    <br>
+    <li> • 15+ locations</li>
+    <br>
+    <li> • 4.9 Star Rating</li>
+    <br> 
+    <li> • 10 minutes delivery</li>
   </div>
     <br>
-    <br>
-  <div id="div1">
-    <li> 50,000+ meals served</li>
-    <li> 15+ locations</li>
-    <li> 4.9 Star Rating</li>
-    <li> 10 minutes delivery</li>
-  </div>
-    <br>
   <br>
     <br>
-    <h2 id="menu">Featured Menu</h2>
-<p style="font-size:300%"><b>Cards:</b></p> <br>
-<img class="img"src="bucket.jpg">
-  <h2>Crispy Chicken Bucket</h2>
+    <h2 id="menu" class="myp">Featured Menu</h2>
+<p><b>Cards:</b></p> <br>
+<img class="img"src="images/bucket.jpg">
+  <h2 class="myp">Crispy Chicken Bucket</h2>
     <br>
 <br>
-  <img class="img" src="burger2.jpg">
-  <h2>Chicken Burger</h2>
+  <img class="img" src="images/burger2.jpg">
+  <h2 class="myp">Chicken Burger</h2>
   <br>
   <br>
-<img class="img" src="fries2.jpg">
-  <h2> 🍟 Loaded Fries</h2>
+<img class="img" src="images/fries2.jpg">
+  <h2 class="myp"> 🍟 Loaded Fries</h2>
     <br>
     <br>
-<img class="img" src="fresh drink2.jpg">
-  <h2>Fresh Drinks</h2>
+<img class="img" src="images/fresh drink2.jpg">
+  <h2 class="myp">Fresh Drinks</h2>
 <br>
     <br>
   <br>
   <br>
-<h1 style="font-size:50px; font-family:serif;">Why Choose Us</h1>
-    <br>
+<h1 class="y26">Why Choose Us</h1>
+  
   <p><b>Three Cards:</b></p>
  <p>🚚 Fast Delivery</p>
   <p>🍗 Fresh Ingredients </p>
@@ -374,13 +390,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     <br>
     <br>
     <br>
-
-  <h1 style="font-size:50px; font-family:serif;" id="about"> About Us</h1>
+   
+ <h1 id="about" class="y26"> About Us</h1>
 <p style="font-family:serif;">Since 2018, Golden crunch has been serving handcrafted fried chicken made from premium ingredients and family recipes. </p>
 <br>
   <br>
     <br>
-  <h1 style="font-size:60px; font-family:serif;">Reviews </h1>
+  <h1 class="y26">Reviews </h1>
     <div class="review">
     <p>"Best fried chicken I've had in years"</p>
     <span>~Sarah Johnson</span>
@@ -405,7 +421,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     <br> 
 
     <section id="contact">
-    <h2 id="contact">Contact Us</h2>
+    <h2 id="contact" class="myp">Contact Us</h2>
 <p>
 We'd love to hear from you. Send us a message and we'll get back to you as <b>soon</b> as possible.
 </p>
@@ -421,15 +437,14 @@ We'd love to hear from you. Send us a message and we'll get back to you as <b>so
         </button>
     </form>
     </section>
-  </>
 
     <section class="cta">
-    <h2 style="color:gold;">Ready For Your Next Meal?</h2>
+    <h2 class="kpi">Ready For Your Next Meal?</h2>
 
     <p><strong>
         Freshly prepared meals delivered straight to your doorstep.</strong>
     </p>
-  <div class="button container">
+  <div class="button-container">
  <button> <a href="https://wa.me/2349017413213">
         Order Now
     </a> </button>
@@ -439,7 +454,7 @@ We'd love to hear from you. Send us a message and we'll get back to you as <b>so
     <hr class="footer-line">
     <footer>
 
-<h3 style="font-size:150px; font-family:serif;">Golden Crunch</h3>
+<h3>Golden Crunch</h3>
 
 <p>
 Serving happiness one meal at a time.
