@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head> 
-  <meta charset="UTF-8">
-  
+  <meta charset="UTF-8"> 
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Golden Crunch</title>
 <style>
@@ -180,7 +180,7 @@ textarea{
 }
 
 form button{
-    padding: 15px 30px;
+    padding: 15px 20px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -300,6 +300,13 @@ footer p{
         padding:15px;
         font-size:1rem;
     }
+    .main-container {
+  max-width: 1200px; /* Prevents the site from stretching too wide */
+  margin-left: auto; /* Pushes the container from the left */
+  margin-right: auto; /* Pushes the container from the right */
+  width: 100%; /* Ensures responsiveness on smaller screens */
+}
+
   
 </style>
   
@@ -307,6 +314,7 @@ footer p{
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
   <body style="background-color:brown;">
+ <div class="main-container">
     <header>
       <nav>
   <ul>
@@ -459,7 +467,8 @@ Serving happiness one meal at a time.
 </p>
 
     </footer>
-  </body>
+  </div> 
+  </body> 
 </html>
 
 
