@@ -77,7 +77,7 @@ h1.myelement{
   button{
       background-color: #f0d022;
       color:black;
-      padding:40px 60px;
+      padding:30px 40px;
       text-align:center;
     text-decoration: none; 
       font-family:serif;
@@ -85,6 +85,7 @@ h1.myelement{
       font-size:75px;
       border-radius:30px  
   }
+    
   a{
     text-decoration:none; 
   }
@@ -94,13 +95,13 @@ h1.myelement{
   align-items: center; 
     padding:100px;
     border-radius:8px;
-    font-size:2rem; 
+    font-size:1.5rem; 
     
   }
   img{
     width:100%;
     height:auto; 
-  }
+  }      
   p.hat{
     font-family:san serif; 
     font-size:500%;
@@ -123,15 +124,19 @@ h1.myelement{
     h1{
     font-size: clamp(2.5rem, 8vw, 5rem);
       }
-    
+    p.khf{
+      font-size:30px; 
+    }
   .review{
-    margin-bottom:30px;
+    margin-bottom:30px; 
+    font-size:30px; 
+    text-align:center;
   }
   .review span{
     display:block;
     margin-top:10px;
     color:gold;
-    font-size:40px;
+    font-size:25px;
     font-family:serif;
     text-align:center; 
   }
@@ -162,11 +167,11 @@ textarea{
 }
 
 textarea{
-    height: 100px;
+    height: 80px;
 }
 
 form button{
-    padding: 5px 10px;
+    padding: 3px 7px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -224,20 +229,20 @@ footer p{
     color: white;
   }
   form{
-    max-width: 500px;
+    max-width: 400px;
     margin: auto;
   }
   input{
-    height:100px;
-    font-size: 2.5rem; 
+    height:90px;
+    font-size: 2rem; 
   }
    textarea{
-  height:100px;
-     font-size: 2.5rem; 
+  height:90px;
+     font-size: 2rem; 
    }
    form button{
-     padding: 20px 30px;
-     font-size: 2.2rem;
+     padding: 20px 20px;
+     font-size: 2rem;
      border-radius:10px;
    }
   .socials i{
@@ -292,9 +297,12 @@ footer p{
     }
     button{
         font-size:1rem;
-        padding:15px 25px;
+        padding:20px 25px;
     }
-
+   button.mpi{
+     font-size:1rem;
+     padding:1px; 
+   }
     input{
         font-size:1rem;
         height:60px;
@@ -373,7 +381,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     <br>
     <h2 id="menu" class="myp">Featured Menu</h2>
 <p><b>Cards:</b></p> <br>
-<img class="img"src="bucket.jpg">
+<img class="img" src="bucket.jpg">
   <h2 class="myp">Crispy Chicken Bucket</h2>
     <br>
 <br>
@@ -393,22 +401,22 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   <br>
 <h1 class="y26">Why Choose Us</h1>
   
-  <p><b>Three Cards:</b></p>
- <p>🚚 Fast Delivery</p>
-  <p>🍗 Fresh Ingredients </p>
-  <p>⭐ Top Rated Service</p> 
+  <p class="khf"><b>Three Cards:</b></p> 
+ <p class="khf">🚚 Fast Delivery</p>
+  <p class="khf">🍗 Fresh Ingredients </p>
+  <p class="khf">⭐ Top Rated Service</p> 
     <br>
     <br>
     <br>
    
  <h1 id="about" class="y26"> About Us</h1>
-<p style="font-family:serif;">Since 2018, Golden crunch has been serving handcrafted fried chicken made from premium ingredients and family recipes. </p>
+<p style="font-family:serif; font-size:25px;">Since 2018, Golden crunch has been serving handcrafted fried chicken made from premium ingredients and family recipes. </p>
 <br>
   <br>
     <br>
   <h1 class="y26">Reviews </h1>
     <div class="review">
-    <p>"Best fried chicken I've had in years"</p>
+    <p class="review">"Best fried chicken I've had in years"</p> 
     <span>~Sarah Johnson</span>
 </div>
 
@@ -427,13 +435,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     
     <br>
     <br>
-    <br>
-    <br> 
+
 
     <section id="contact">
     <h2 id="contact" class="myp">Contact Us</h2>
-<p>
-We'd love to hear from you. Send us a message and we'll get back to you as <b>soon</b> as possible.
+<p>We'd love to hear from you. Send us a message and we'll get back to you as <b>soon</b> as possible.
 </p>
     <form>
         <input type="text" placeholder="Your Name">
@@ -451,11 +457,11 @@ We'd love to hear from you. Send us a message and we'll get back to you as <b>so
     <section class="cta">
     <h2 class="kpi">Ready For Your Next Meal?</h2>
 
-    <p><strong>
+    <p class="khf"><strong> 
         Freshly prepared meals delivered straight to your doorstep.</strong>
     </p>
-  <div class="button-container">
- <button> <a href="https://wa.me/2349017413213">
+  <div class="mpi">
+ <button class="mpi"> <a href="https://wa.me/2349017413213">
         Order Now
     </a> </button>
     </div>
