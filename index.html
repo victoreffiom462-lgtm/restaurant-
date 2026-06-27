@@ -7,10 +7,7 @@
   
   <title>Golden Crunch</title>
     <style> 
- html, body{
-   max-width:100%; 
-    overflow-x:hidden; 
-  }
+ 
   .hero{
     display:flex;
     flex-direction:column;
@@ -256,7 +253,7 @@ footer p{
 .socials a:hover{
     transform: scale(1.2);
 }
-  @media (max-width:768px){
+  @media (max-width:768px){ 
 
     h1.myelement{
         font-size:2.5rem;
@@ -323,13 +320,26 @@ footer p{
 }
 
   } 
+      html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    width: 800px;        /* Put your actual fixed width here */
+    max-width: 100%;    /* Keeps it responsive on smaller screens */
+    margin: 0 auto;     /* The magic line: Centers the block horizontally */
+}
+
 </style>
   
   <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
   <body style="background-color:brown;">
- <div class="main-container">
+ <div class="page-wrapper"> 
     <header>
       <nav>
   <ul>
